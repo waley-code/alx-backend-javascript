@@ -1,5 +1,5 @@
 import handleProfileSignup from "../3-all";
-import * as utilsFunctions from "../../utils";
+import * as utilsFunctions from "../utils";
 
 test("handleProfileSignup imports the right functions", async () => {
     const spy = jest.spyOn(console, "log").mockImplementation();
