@@ -1,7 +1,7 @@
 export class HolbertonClass {
   constructor(year, location) {
-    this.year = year;
-    this.location = location;
+    this._year = year;
+    this._location = location;
   }
 
   get year() {
@@ -43,3 +43,4 @@ const student4 = new StudentHolberton('Donald', 'Bush', class2019);
 const student5 = new StudentHolberton('Jason', 'Sandler', class2019);
 
 export const listOfStudents = [student1, student2, student3, student4, student5];
+  
