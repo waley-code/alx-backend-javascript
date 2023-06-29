@@ -1,6 +1,7 @@
 export default class Building {
   constructor(sqft) {
     this.sqft = sqft;
+    if (this.constructor.name !== 'Building') this.evacuationWarningMessage();
   }
 
   set sqft(sqft) {
