@@ -51,10 +51,8 @@
 // // console.log(hasValuesFromArray(new Set([1, 2, 3, 4, 5]), [10]));
 // // console.log(hasValuesFromArray(new Set([1, 2, 3, 4, 5]), [1, 10]));
 
-import cleanSet from "./8-clean_set.js";
-
-console.log(cleanSet(new Set(['bonjovi', 'bonaparte', 'bonappetit', 'banana']), 'bon'));
-console.log(cleanSet(new Set(['bonjovi', 'bonaparte', 'bonappetit', 'banana']), ''));
+// console.log(cleanSet(new Set(['bonjovi', 'bonaparte', 'bonappetit', 'banana']), 'bon'));
+// console.log(cleanSet(new Set(['bonjovi', 'bonaparte', 'bonappetit', 'banana']), ''));
 
 // // import groceriesList from "./9-groceries_list.js";
 
