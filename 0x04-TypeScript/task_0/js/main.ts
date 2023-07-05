@@ -33,9 +33,15 @@ const renderTable = (students: Student[]): void => {
   const headerRow = document.createElement('tr');
   const headerFirstName = document.createElement('th');
   headerFirstName.textContent = 'First Name';
+  const headerLastName = document.createElement('th');
+  headerLastName.textContent = 'Last Name';
+  const headerAge = document.createElement('th');
+  headerAge.textContent = 'Age';
   const headerLocation = document.createElement('th');
   headerLocation.textContent = 'Location';
   headerRow.appendChild(headerFirstName);
+  headerRow.appendChild(headerLastName);
+  headerRow.appendChild(headerAge);
   headerRow.appendChild(headerLocation);
   table.appendChild(headerRow);
 
@@ -44,9 +50,15 @@ const renderTable = (students: Student[]): void => {
     const row = document.createElement('tr');
     const firstNameCell = document.createElement('td');
     firstNameCell.textContent = student.firstName;
+    const lastNameCell = document.createElement('td');
+    lastNameCell.textContent = student.lastName;
+    const ageCell = document.createElement('td');
+    ageCell.textContent = (student.age).toString();
     const locationCell = document.createElement('td');
     locationCell.textContent = student.location;
     row.appendChild(firstNameCell);
+    row.appendChild(lastNameCell);
+    row.appendChild(ageCell);
     row.appendChild(locationCell);
     table.appendChild(row);
   });
